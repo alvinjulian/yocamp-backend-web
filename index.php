@@ -1,7 +1,8 @@
 <html>
 <head>
 <title>Yo-Camp Backend</title>
-
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <style type="text/css">
     html 
     { 
@@ -62,9 +63,6 @@
 </head>
 
 <body>
-	<?php
-        $_SESSION['YoyoCampusBackendSuperSecretPassword'] = $serverauth;
-    ?>
 	<center>
 		<table>
             <form action="Login.php" method="POST">
