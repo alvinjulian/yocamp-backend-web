@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Yo-Camp Backend</title>
+
 <style type="text/css">
     html 
     { 
@@ -61,13 +62,17 @@
 </head>
 
 <body>
-	
+	<?php
+        $_SESSION['YoyoCampusBackendSuperSecretPassword'] = $serverauth;
+    ?>
 	<center>
 		<table>
             <form action="Login.php" method="POST">
             <input type="hidden" name="server_auth" value="YoYoCampusBackendSuperSecretPassword">
 			<tr>
 				<td colspan=4>
+                    <br/>
+                    <br/>
 					<img src="images/yocamplogo.png" alt=""/>
                     <br/>
                     <br/>
