@@ -66,7 +66,7 @@
 <body>
 	<center>
 		<table>
-            <form action="Login.php" method="POST">
+            <form action="login.php" method="POST">
             <input type="hidden" name="server_auth" value="YoYoCampusBackendSuperSecretPassword">
 			<tr>
 				<td colspan=4>
