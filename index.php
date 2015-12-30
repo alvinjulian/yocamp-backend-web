@@ -3,6 +3,7 @@
 <title>Yo-Camp Backend</title>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
 <style type="text/css">
     html 
     { 
@@ -14,7 +15,7 @@
     }
     p
     {
-        font-family:georgia;
+        font-family:'Open Sans';
         font-weight:bold;
         font-size:large;
         color:white;
@@ -52,7 +53,7 @@
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#188BC0',GradientType=0);
         padding:8px 13px;
         color:#fff;
-        font-family:'Helvetica Neue',sans-serif;
+        font-family:'Open Sans',sans-serif;
         font-size:17px;
         border-radius:4px;
         -moz-border-radius:4px;

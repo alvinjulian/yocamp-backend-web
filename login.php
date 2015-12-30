@@ -1,4 +1,8 @@
 <html>
+    <!-- 
+        Log in script
+        Alvin Julian <alvin.julian@outlook.com>
+    -->
     <head>
         <title>
             Logging in to Yo-Camp Backend...
@@ -13,6 +17,8 @@
             if(!$_POST['email'] or !$_POST['password'])
             {
 	           die(json_encode(array('success'=>0)));
+               header("location: index.php");
+                exit();
             }
             
             $email=$mysqli->real_escape_string($_POST['email']);
@@ -24,9 +30,17 @@
             $stmt->execute();
             $stmt->bind_result($passhash);
             $stmt->fetch();
-
+            if($passhash!=$password)
+            {
+                header("location: index.php");
+                exit();
+            }
+            else
+            {
+                header("location: dashboard.php");
+                exit();
+            }
             $stmt->close();
-
         ?>
     </body>
 </html>
