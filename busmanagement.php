@@ -4,6 +4,7 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     </head>
     
     <body>
@@ -19,39 +20,29 @@
         <div id="container">
         	<div class="sidebar">
         		<ul id="nav">
-        			<li><a class="selected" href="#">Dashboard</a></li>
-        			<li><a href="busmanagement.php">Bus Management</a></li>
+        			<li><a href="dashboard.php">Dashboard</a></li>
+        			<li><a class="selected" href="#">Bus Management</a></li>
         			<li><a href="ticketsales.php">Ticket Sales</a></li>
-        			<li><a href="http://my.veritrans.co.id">VeriTrans Gateway</a></li>
+                    <li><a href="http://my.veritrans.co.idmy.veritrans.co.id">VeriTrans Gateway</a></li>
         			<li><a href="setting.php">Setting</a></li>
         			<li><a href="#">Logout</a></li>
         		</ul>
         	</div>
         	<div class="content">
-        		<h1>Dashboard</h1>
-        		<p>Here your stuff</p>
+        		<h1>Bus Management</h1>
+        		<p>Add, Edit and Delete your Bus Schedule</p>
         		<div id="box">
         			<div class="box-top">
-        				News
+        				Bus List
         			</div>
         			<div class="box-panel">
-        				Yo-Camp Bus Management System<br>
-        				Please use it with full responsibility!
-        			</div>
-        		</div>
-
-        		<div id="box">
-        			<div class="box-top-half">
-        				Ticket Sales
-        			</div>
-        			<div class="box-panel-half">
-        				<?php
-        				//Import PHP Plot
-        					require_once('phplot.php');
-        					require_once('connection.php');
-
-        					$plot = new PHPlot();
-        				?>
+        				Add or select any bus to edit<br/>
+                        <div class="box-date">
+                            Start date : <input type="date" name="startdate"> &nbsp &nbsp End date : <input type="date" name="enddate">
+                            <div class="date-sub">
+                                <input type="submit" class="styled-button-1" value="Search" />
+                            </div>
+                        </div>
         			</div>
         		</div>
         	</div>
