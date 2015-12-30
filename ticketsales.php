@@ -19,11 +19,12 @@
         <div id="container">
         	<div class="sidebar">
         		<ul id="nav">
-        			<li><a class="selected" href="#">Dashboard</a></li>
-        			<li><a href="#">Bus Management</a></li>
-        			<li><a href="#">Purchase</a></li>
-        			<li><a href="#">Setting</a></li>
-        			<li><a href="#">Logout</a></li>
+        			<li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="busmanagement.php">Bus Management</a></li>
+                    <li><a class="selected" href="#">Ticket Sales</a></li>
+                    <li><a href="http://my.veritrans.co.idmy.veritrans.co.id">VeriTrans Gateway</a></li>
+                    <li><a href="setting.php">Setting</a></li>
+                    <li><a href="#">Logout</a></li>
         		</ul>
         	</div>
         	<div class="content">

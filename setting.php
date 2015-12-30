@@ -32,13 +32,43 @@
         		<p>Change your password, Add user accounts</p>
         		<div id="box">
         			<div class="box-top">
-        				News
+        				Change your password
         			</div>
         			<div class="box-panel">
-        				Yo-Camp Bus Management System<br>
-        				Please use it with full responsibility!
+        				<form action="changepassword.php" method="POST">
+                            <div class="labelChangePass">
+                                Current password : <br>
+                                <input type="password" name="currentpassword"> <br>
+                                Enter new password : <br>
+                                <input type="password" name="newpassword"> <br>
+                                Confirm new password : <br>
+                                <input type="password" name="confirmpassword"> <br><br>
+                                <input type="submit" class="styled-button-1" value="Change my password">
+                            </div>
+                        </form>
         			</div>
         		</div>
+
+                <div id="box">
+                    <div class="box-top">
+                        Create new account
+                    </div>
+                    <div class="box-panel">
+                        <form action="addaccount.php" method="POST">                        
+                            <div class="box-addaccount">
+                                Name : <br>
+                                <input type="text" name="name"> <br>
+                                Email : <br>
+                                <input type="email" name="email"> <br>
+                                Password : <br>
+                                <input type="password" name="password"> <br>
+                                Confirm password : <br>
+                                <input type="password" name="confirmpasswordnewacc"> <br><br>
+                                <input type="submit" class="styled-button-1" value="Create new account">
+                            </div>
+                        </form>
+                    </div>
+                </div>
         	</div>
         </div>
 
